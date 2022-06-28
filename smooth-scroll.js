@@ -10,6 +10,6 @@ const easeOutBounce = (_, t, b, c, d) => {
 };
 
 var scroller = new SweetScroll({
-    easing: easeOutBounce,
-    duration: 1750
+    easing: 'easeInQuad',
+    duration: 1200
 });

@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="aboutme.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet">
-    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,6 +25,7 @@
 
 
     <header id="start">
+
         <div class="header-container">
             <div class="header-top">
                 <div class="logo-container">
@@ -32,61 +36,98 @@
                     <i class='bx bx-menu menu-btn'></i>
                 </div>
 
+                <div data-status="hidden" class="menu-container-mobile">
+                    <nav class="menu-options">
+                        <ul>
+                            <li><i class='bx bx-cube-alt'></i><a href="#start" data-scroll>start</a></li>
+                            <li><i class='bx bx-cube-alt'><a href="#about" data-scroll></i>o mnie</a></li>
+                            <li><i class='bx bx-cube-alt'></i><a href="">oferta</a></li>
+                            <li><i class='bx bx-cube-alt'></i><a href="">galeria</a></li>
+                            <li><i class='bx bx-cube-alt'></i><a href="">kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-links-horizontal-mobile">
+                        <a href="/"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="/"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="/"><i class='bx bxl-tiktok'></i></a>
+                        <a href="/"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+
                 <div class="menu-container-dekstop">
                     <div>
-                        <p class="menu-desktop-p">start</p>
-                        <i class='bx bx-cube-alt'></i>
+                        <a href="#start" class="menu-desktop-btn" data-scroll data-btn="start">start</a>
+                        <i class='bx bx-cube-alt menu-dekstop-dot showDot' data-index="start"></i>
                     </div>
                     <div>
-                        <p class="menu-desktop-p">o mnie</p>
-                        <i class='bx bx-cube-alt'></i>
+                        <a href="#about" class="menu-desktop-btn" data-scroll data-btn="about">o mnie</a>
+                        <i class='bx bx-cube-alt menu-dekstop-dot' data-index="about"></i>
                     </div>
                     <div>
-                        <p class="menu-desktop-p">sprzęt</p>
-                        <i class='bx bx-cube-alt'></i>
+                        <a href="#gear" class="menu-desktop-btn" data-scroll="">oferta</a>
+                        <i class='bx bx-cube-alt menu-dekstop-dot' data-index="gear"></i>
                     </div>
                     <div>
-                        <p class="menu-desktop-p">galeria</p>
-                        <i class='bx bx-cube-alt'></i>
+                        <a href="" class="menu-desktop-btn">galeria</a>
+                        <i class='bx bx-cube-alt menu-dekstop-dot'></i>
                     </div>
                     <div>
-                        <p class="menu-desktop-p">kontakt</p>
-                        <i class='bx bx-cube-alt'></i>
+                        <a href="" class="menu-desktop-btn">kontakt</a>
+                        <i class='bx bx-cube-alt menu-dekstop-dot'></i>
                     </div>
 
                 </div>
             </div>
-            <div data-status="hidden" class="menu-container">
-                <nav class="menu-options">
-                    <ul>
-                        <li><i class='bx bx-cube-alt'></i><a href="#start" data-scroll>start</a></li>
-                        <li><i class='bx bx-cube-alt'><a href="#aboutme" data-scroll=""></i>o mnie</a></li>
-                        <li><i class='bx bx-cube-alt'></i><a href="">sprzęt</a></li>
-                        <li><i class='bx bx-cube-alt'></i><a href="">galeria</a></li>
-                        <li><i class='bx bx-cube-alt'></i><a href="">kontakt</a></li>
-                    </ul>
-                </nav>
-                <div class="social-links-horizontal">
-                    <a href="/"><i class='bx bxl-facebook-circle'></i></a>
-                    <a href="/"><i class='bx bxl-instagram-alt'></i></a>
-                    <a href="/"><i class='bx bxl-tiktok'></i></a>
-                    <a href="/"><i class='bx bxl-youtube'></i></a>
-                </div>
-            </div>
+
+
 
 
         </div>
 
 
         <div class="header-bottom">
-            <p>wiktor wasiński</p>
-            <span>zdjecia - video - reklama</span>
+            <div class="social-links-horizontal-desktop">
+                <ul>
+                    <li><a href="/"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="/"><i class='bx bxl-instagram-alt'></i></a></li>
+                    <li><a href="/"><i class='bx bxl-tiktok'></i></a></li>
+                    <li><a href="/"><i class='bx bxl-youtube'></i></a></li>
+                </ul>
+            </div>
+            <div class="advert">
+                <p>wiktor wasiński</p>
+                <i class='bx bx-up-arrow'></i>
+                <span>Tam sięgaj, gdzie wzrok nie sięga.</span>
+            </div>
         </div>
-        </div>
+
+
     </header>
+
+    <main id="about">
+        <div class="title">
+            <p><i class='bx bxs-face-mask'></i> O MNIE</p>
+            <span id="top-left-horizontal-line"></span>
+            <span id="top-left-vertically-line"></span>
+            <span id="bottom-right-horizontal-line"></span>
+            <span id="bottom-right-vertically-line"></span>
+        </div>
+        <div class="photo-container">
+        </div>
+        <aside class="about-me-text-container">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum modi molestiae itaque exercitationem quas
+            nemo dolorem ab rem sed laudantium ipsum, praesentium repellendus adipisci, quasi quisquam ullam totam
+            minima dicta.
+            Laboriosam enim id doloremque minus esse facilis, maxime at recusandae praesentium iure quidem omnis non
+            voluptatum, ipsum corporis optio quis atque, odit minima sint fugit nesciunt. Cupiditate ea totam obcaecati!
+        </aside>
+    </main>
+
+
 
 </body>
 <script src="menu.js"></script>
+<script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
 <script src="smooth-scroll.js"></script>
 
 </html>
